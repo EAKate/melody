@@ -1,3 +1,21 @@
+@font-face {
+  font-family: "Bebas Neue Regular";
+  src: url("../fonts/bebas-neue-regular.woff") format("woff"),
+    /* Modern Browsers */ url("../fonts/bebas-neue-regular.woff2")
+      format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Bebas Neue Book";
+  src: url("../fonts/bebas-neue-book.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/bebas-neue-book.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/bebas-neue-book.woff") format("woff"),
+    /* Modern Browsers */ url("../fonts/bebas-neue-book.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -48,4 +66,60 @@ body {
   line-height: 20px;
   text-decoration: none;
   color: #fff;
+}
+.main {
+  max-width: 1280px;
+  margin: auto;
+  padding-top: 54px;
+  display: flex;
+}
+.main-info {
+  flex-grow: 1;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between; /* разбрасываем элементы по краям */
+}
+.home-image path {
+  opacity: 0; /*не видно выделения*/
+  cursor: pointer; /*курсор пальчик */
+}
+.home-image path:hover {
+  opacity: 1; /* видно при наведении курсора */
+}
+.counter-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.counter-button {
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+}
+.counter-arrow-down {
+  transform: rotateX(180deg); /* разворот кнопки up на 180 градусов */
+}
+.main-title {
+  margin: 0;
+  font-family: "Bebas Neue Regular", sans-serif;
+  font-weight: normal;
+  font-size: 37px;
+  line-height: 44px;
+  color: #635854;
+}
+.conuter {
+  font-family: "Bebas Neue Regular", sans-serif;
+  font-size: 124px;
+  color: #635854;
+  margin-top: 10px;
+}
+.button-primary {
+  background: #3596f5;
+  border-radius: 6px;
+  color: #fff;
+  border: none;
+  padding: 16px 36px;
+  cursor: pointer;
 }
